@@ -3,3 +3,4 @@
 2. Contiene el desarrollo de la página 
 3. By Mauricio Carvajal
 4. Contiene una imagen del desarrollador generada por la IA 
+5. Contiene hoja de estilos CSS y scripts JS.
