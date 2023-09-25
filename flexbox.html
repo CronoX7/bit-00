@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 1024px;
+            height: 512px;
+            margin: 16px auto;
+            background-color: lightgray;                       
+            border: 2px solid black;
+            border-radius: 16px;
+            /*display: flex;
+            flex-wrap: wrap;*/
+
+            display: grid;
+            grid-template-columns: 255px 255px 255px 255px;
+            grid-template-rows: auto;
+            grid-template-areas: 
+                'header header header header'
+                'nav nav nav nav'
+                'main main main aside'
+                'footer footer footer footer'
+            ;
+
+        }
+
+        header,
+        nav,
+        main,
+        aside,
+        footer{
+            background-color: gray;
+            color: white;
+            border: 2px solid white;
+            border-radius: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+        
+
+        header,
+        nav,
+        footer{
+            width: 1024px;
+        }
+
+        header{
+            grid-area: header;
+            height: 88px;            
+        }
+
+        nav{
+            grid-area: nav;
+            height: 48px;
+        }
+        
+        main,
+        aside{
+            height: 340px;
+        }
+
+        main{
+            grid-area: main;
+            width: 800px;
+        }
+        
+        aside{
+            grid-area: aside;
+            width: 220px;
+        }
+
+        footer{
+            grid-area: footer;
+            height: 32px;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+        <header>Contenido header</header>
+        <nav>Contenido nav</nav>
+        <main>Contenido main</main>
+        <aside>Contenido aside</aside>
+        <footer>Contenido footer</footer>
+    
+</body>
+</html>
